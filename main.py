@@ -315,7 +315,7 @@ def get_unit_price(message, Q):
             bot.register_next_step_handler(message, get_unit_price, Q)
 
     except ValueError:
-        bot.send_message(message.chat.id, "Для цены за единицу товара примнимаются только положительные числа"
+        bot.send_message(message.chat.id, "Для цены за единицу товара примнимаются только положительные числа")
         bot.register_next_step_handler(message, get_unit_price, Q)
 
 
